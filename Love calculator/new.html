@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="index.js">
+
+</script>
+<title>test</title>
+
+<style>
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: floralwhite;
+        padding: 0;
+        margin: 0;
+        color: black;
+        font-size: 30px;
+        margin-left: 0px;
+        justify-content: center
+    }
+
+    .btn {
+        padding: 8px 20px;
+        width: 200px;
+        border-width: 4px;
+        height: 50px;
+        color: black;
+        font-weight: 700;
+        border-radius: 0;
+        text-transform: capitalize;
+        margin: 25px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+        .btn::before {
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, aqua, transparent);
+            transform: translateX(-100%);
+            transition: 0.6s;
+            position: absolute;
+        }
+
+        .btn:hover {
+            background: linear-gradient(120deg, black, black, black );
+            box-shadow: 0 0 10px 5px black;
+            color: white;
+        }
+
+    .text {
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+        color: burlywood;
+        padding: 0px;
+        display: flex;
+        height: 100px;
+        justify-content: right;
+    }
+
+    .button {
+        justify-content: center;
+        position: center;
+        text-align: center
+    }
+
+    .headerImage {
+        background-size: cover;
+        padding: 0px;
+        height: 0px;
+        justify-content: left;
+        margin-right: 980px;
+    }
+
+    .mid_page {
+        font-size: 50px;
+        margin-left: 350px;
+    }
+
+    .input {
+        text-align: center;
+        border: solid;
+        margin-right: 440px;
+        margin-left: 440px;
+       /* filter: drop-shadow(0px 10px 10px black);*/
+    }
+
+
+    .message {
+        text-align: center;
+    }
+</style>
+
+
+<header class="text">
+    <div class="headerImage">
+        <!-- <img src="components/images/new_img.png" />-->
+    </div>
+
+    <ul>
+        <li><h3 style="margin-right:15px">HOME</h3></li>
+    </ul>
+</header>
+<body>
+    <div class="mid_page">
+        <h2 style="font-family:'Bernard MT';color:black"<u>LOVE CALCULATOR</u></h2>
+
+    </div>
+
+    This is a love calculator used to check the probabibility of two users matching up with each other
+    <div class="input">
+        <input id="userInput" placeholder="Enter your name" />
+        <br />
+        <input id="sec_Input" placeholder="Enter your friend's name" />
+
+        <div class="button">
+            <button class="btn" onclick="func()">
+                <h3>  CLICK ME</h3>
+            </button>
+
+        </div>
+    </div>
+    <h1 id="message"></h1>
+    <script>
+        function func() {
+            let n = Math.random(100);
+            n = n * 100;
+            alert("Compatibility: " + Math.round(n));
+            userInput = document.querySelector("#userInput")
+            sec_Input = document.querySelector("#sec_Input")
+            message = document.querySelector("#message")
+            message.innerHTML = userInput.value + " and " + sec_Input.value + " Compatibility ratings are " + Math.round(n) + "% 😂✨😍";
+            if (n > 70) {
+                return "TWO OF YOU ARE A GREAT FIT 🤖😘😁"
+            }
+            else {
+                return "Look for a more suitable option!" + userInput.value + " and " + sec_Input.value
+            }
+        }
+    </script>
+
+
+</body>
+
+
+
+</html>

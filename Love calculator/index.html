@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>What is your name </h1>
+    <textarea id="inp" ></textarea>
+    <input id="userInput" alt="YOUR NAME">
+    <br />
+    <br />
+    <button onclick="func()">SUBMIT</button>
+    <h1 id="message"></h1>
+    <style>
+        body{
+            background-color:antiquewhite;
+            text-align:center;
+        }
+    </style>
+    <script>
+        function func() {
+            
+            let userInput = document.querySelector("#userInput");
+            let message = document.querySelector("#message");
+            message.innerHTML = "Hello " + userInput.value;
+           
+        }
+            
+
+    </script>
+</body>
+
+
+</html>
