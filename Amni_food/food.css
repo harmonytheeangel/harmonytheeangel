@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+    background-color: white;
+    
+}
+nav {
+    background-color: orange;
+    padding: 20px;
+}
+
+.nav {
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 100%;
+   display: flex;
+   
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+ .nav-links ul li {
+
+   list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative; 
+
+}
+.nav-links ul li a {
+    color: #641d1d;
+    text-decoration: none;
+    font-size: 15px;
+}
+nav-links{
+    background-color: orange;
+    padding: 20px;
+}
+.btn-food {
+    border: 2px solid red;
+    color: #000;
+    background: white;
+    color: #000;
+    transition: 0.5s;
+
+}
+.btn-food:hover{
+    color: #fff;
+    border: 2px solid blue;
+    background: black;
+    cursor: pointer;
+}
+
+
+/*header4 {
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    background: orange;
+    padding: 5px;
+
+} */
+
+header4 {
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+    border: #000;
+}
+
+.food-images {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: left;
+    padding: 70px;
+    
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+   
+}
+.row {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.image-col1 {
+
+    background: #fff;
+    border-radius: 1px;
+    margin-bottom: 2%;
+    padding: 5px 3px;
+    box-sizing: border-box;
+    border: 1px solid black;
+   
+
+
+}
+.image-col2 {
+    background:  #fff;
+    border-radius:1px
+    margin-bottom: 2%;
+    padding: 5px 3px;
+    box-sizing: border-box;
+    border: 1px solid black;
+   
+}
+
+.image-col3 {
+    background: #fff;
+    border-radius: 1px;
+    margin-bottom: 2%;
+    padding-left: 12;
+    padding: 5px 3px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.row h3 a{
+    
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.row h3 a:hover {
+    text-decoration:auto;
+
+}
+
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #000;
+}
+
+
+.myDiv {
+    border: 5px outset red;
+    background-color: lightblue;    
+    text-align: center;
+  }
+
+
+CSS Code
+* {
+box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+margin-top: 1px;
+margin-bottom: 6px;
+resize: vertical;
+}
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+}
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+.container {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 10px;
+text-align: center;
+}
+
+.column {
+float: center;
+width: 50%;
+margin-top: 6px;
+padding: 20px;
+text-align: center;
+justify-content: center;
+
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+@media screen and (max-width: 600px) {
+.column, input[type=submit] {
+width: 100%;
+margin-top: 0;
+}
+
+.header3 h2 {
+    justify-content: right;
+    padding-bottom: 50px;
+    text-align: right;
+    color: #fff;
+}
+.header3 p {
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    text-align: right;
+    color: orange;
+
+}
+}
+
+
+.row > div {
+    width: 30%;
+    padding: 5px;
+    margin: 0;
+}
+
+.row > div img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+ 
+
+  
+.btn {
+
+      transition: linear;
+      text-align:center;
+      margin:45px;
+      width:   180px;
+      position:center;
+      display:block;
+      background-color:orange;
+      
+    }
+.btn h3{
+        text-decoration-color: none;
+         
+  }
+    .btn ul li a{
+        text-decoration: none;
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+  

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .nav {
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 100%;
+   display: flex;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+    background: orange;
+    padding: 20px;
+
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.btn-food {
+    border: 2px solid red;
+    color: #000;
+    background: white;
+    transition: 0.5s;
+
+}
+.btn-food:hover{
+    color: #fff;
+    border: 2px solid blue;
+    background: black;
+    cursor: pointer;
+    
+    </style>
+  <title>Login - AmniFood</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0px;
+      background-color: #f7f7f7;
+      display: block;
+    }
+    header {
+  background-color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+h1 {
+  color: #333333;
+  font-size: 48px;
+  margin: 0;
+  font-weight: bold;
+}
+
+p {
+  color: #666666;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+section {
+  /*padding: 80px 0;*/
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: #e25f33;
+  font-weight: bold;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #e25f33;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #b54325;
+}
+
+.contact-details {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: #666666;
+}
+
+.contact-info a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #e25f33;
+}
+
+      .input-container {
+          --c-text: rgb(50, 50, 80);
+          --c-bg: rgb(252, 252, 252);
+          --c-outline: rgb(55, 45, 190);
+          display: grid;
+          gap: 1ch;
+          position: relative;
+          max-width: 190px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: black;
+          justify-content:left;
+          margin-left:120px;
+
+      }
+
+      .input-field {
+          padding: 0.5em 0.75em;
+          border-radius: 0.2em;
+          border: 1px solid var(--c-border, currentColor);
+          color: var(--c-text);
+          font-size: 1rem;
+          letter-spacing: 0.1ch;
+          width: 100%;
+      }
+
+          .input-field:not(:placeholder-shown) + .input-label {
+              transform: translateY(-220%);
+              opacity: 1;
+          }
+
+          .input-field:invalid {
+              --c-border: rgb(230, 85, 60);
+              --c-text: rgb(230, 85, 60);
+              --c-outline: rgb(230, 85, 60);
+          }
+
+          .input-field:is(:disabled, :read-only) {
+              --c-border: rgb(150, 150, 150);
+              --c-text: rgb(170, 170, 170);
+          }
+
+          .input-field:is(:focus, :focus-visible) {
+              outline: 2px solid var(--c-outline);
+              outline-offset: 2px;
+          }
+
+      .input-label {
+          --timing: 200ms ease-in;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transition: transform var(--timing), opacity var(--timing);
+          transform: translateY(-50%);
+          opacity: 0;
+          color: var(--c-text);
+          font-weight: 500;
+      }
+
+
+      .headertag {
+          display: flex;
+          text-align: left;
+          background-color:orange
+
+      }
+
+          .headertag ul li {
+              list-style: none;
+              display: inline-block;
+              padding: 8px 12px;
+              position: relative;
+          }
+
+              .headertag ul li a {
+                  color: #000;
+                  text-decoration: none;
+                  font-size: 15px;
+              }
+.border{
+    
+    margin:50px;
+    border-radius:1px;
+    text-align:center;
+
+}
+.box-border{
+    border:groove;
+    margin-left:170px;
+    margin-right:250px;
+    border-width:10px;
+    border-radius:1px;
+    justify-content:center;
+    text-align:center;
+   
+}
+
+</style>
+</head>
+<body>
+    <section class="header">
+        <div class="headertag">
+            <h2>Amni foods</h2>
+            <div class="nav-links" id="nav-links">
+                <ul>
+
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="../service.html">Customer service</a></li>
+                    <!-- <button class="btn-food">ORDER FOODS</button>-->
+                    <a href="order_food.html"><button class="btn-food">ORDER FOODS</button></a>
+                </ul>
+            </div>
+        </div>
+                        </nav>
+    </section>
+  <header>
+    <div class="container">
+        <h1>Login</h1>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      
+      <p>At <span class="highlight">Amni Food</span>,
+         we believe that food is the way to a man's heart and all voices should be heard 
+      We are here to serve you. Amni kitchen is here for you</p>
+      <div class="box-border" style="text-align: center;">
+          <body>
+              <div class="border">
+                  <p class="input-container">
+                      <input id="input" type="text" placeholder="Enter your name" name="text" id="text" class="input-field" autocomplete="name">
+
+                  </p>
+
+                 <p class="input-container">
+                      <input id="input_two" type="text" placeholder="Enter your Department/comment" name="text" id="text" class="input-field" autocomplete="name">
+
+                  </p>
+                  <p class="input-container">
+                      <input id="input_three" type="email" />
+
+                  </p>
+              </div>
+
+
+              <h1 id="message"></h1>
+          </body>
+          <a class="cta-button" href="#" onclick="myFunc()">Get Started</a>
+          <script>
+              function myFunc() {
+                  input = document.querySelector("#input")
+                  input_two = document.querySelector("#input_two")
+                  input_two = document.querySelector("#input_two")
+                  message = document.querySelector("#message")
+                  message.innerHTML = input.value
+              }
+
+          </script>
+
+      </div>
+
+
+        
+      
+      <div class="contact us-details" id="contact us-details">
+        <h3>Contact Us</h3>
+        <h3>Any suggestions and complaints should be forwarded to our various platforms</h3>
+        <p class="contact-info">For inquiries and assistance, please reach out to us at <a href="contact us.html">info@Amnifood.com</a> or call us at <a href="tel:+234-9092348071">09092348071</a>.</p>
+      </div>
+    </div>
+</section>
+</body>
+</html>
